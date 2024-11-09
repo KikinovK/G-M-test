@@ -1,0 +1,16 @@
+{
+  "name": "gm-test",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel --open --port=8080",
+    "build": "parcel build --dist-dir=build --no-source-maps",
+    "build:dev": "rimraf dist && parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.63.6"
+  }
+}
