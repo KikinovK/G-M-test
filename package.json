@@ -4,7 +4,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel --open --port=8080",
-    "build": "parcel build --dist-dir=build --no-source-maps",
+    "build": "parcel build --dist-dir=build --no-source-maps --public-url /G-M-test/",
     "build:dev": "rimraf dist && parcel build"
   },
   "devDependencies": {
