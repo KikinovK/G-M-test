@@ -1,0 +1,87 @@
+.hero {
+  height: 100vh;
+
+  padding-top: 10.2rem;
+  padding-bottom: 6.4rem;
+
+  background-color: $body_bg_second;
+  background-image: url('../assets/images/bg-left.png'), url('../assets/images/bg-right.png');
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+
+
+  &__row {
+    @include flex_block(column, nowrap, center, center);
+
+    height: 100%;
+
+    max-width: 57rem;
+
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 5.6rem;
+    font-weight: 400;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__info {
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+
+    a {
+      color: $accept;
+    }
+
+  }
+
+  &__btn_wrap {
+    @include flex_block(row, nowrap, flex-start, center, center);
+  }
+
+  &__btn {
+    @include transition_background;
+
+    display: block;
+
+    padding: 1.6rem 3.2rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    color: $white;
+
+    background-color: $accept;
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: lighten($accept, 20%);
+      }
+    }
+
+    &:active {
+      background-color: darken($accept, 20%);
+    }
+  }
+
+  &__decor {
+    margin-top: auto;
+  }
+
+  .container {
+    height: 100%;
+  }
+}

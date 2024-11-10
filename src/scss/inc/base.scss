@@ -22,6 +22,7 @@ a {
   color: inherit;
   &:hover {
     color: $color-hover;
+    text-decoration: underline;
   }
 }
 
