@@ -67,6 +67,13 @@
   will-change: border-color, color;
 }
 
+@mixin transition_transform_opacity {
+  transition:
+    transform 0.3s linear,
+    opacity 0.3s linear;
+  will-change: transform, opacity;
+}
+
 @mixin bp($width, $value: max) {
   @if $value == min {
     @media screen and (min-width: $width) {
