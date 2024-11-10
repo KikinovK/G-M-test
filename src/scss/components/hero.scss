@@ -28,6 +28,10 @@
     &:not(:last-child) {
       margin-bottom: 3.2rem;
     }
+
+    @include bp(1023px) {
+      font-size: 3rem;
+    }
   }
 
   &__info {
